@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Employee.css">
+</head>
+<body>
+    <div id="viewAllEmployee">
+        <h1>Welcome to the Employee Page</h1>
+        <p>Click the button below to view All the Employees</p>
+        <div class="btn-emp">
+        <button onclick="viewEmployee()">View All Employees</button>
+        </div>
+
+        <table class="emp-table">
+            <thead>
+                <th><h1>Username</h1></th>
+                <th><h1>Email</h1></th>
+                <th><h1>Employee Role</h1></th>
+            </thead>
+            <tbody id="customerTable"></tbody>
+        </table>
+    </div>
+    <script src="./Employee.js"></script>
+</body>
+</html>
