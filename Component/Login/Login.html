@@ -14,14 +14,14 @@
         <form>
             <h1>ERS Login</h1>
             <div class="form-row">
-                <input type="employeeUsername" id="usernameInput" class="form-input" placeholder="Username">
+                <input name="username" id="usernameInput" class="form-input" placeholder="Username">
                 <label for="usernameInput" class="form-label">Employee Username</label>
             </div>
             <div class="form-row">
-                <input type="password" id="passwordInput" class="form-input" placeholder="pwd">
+                <input type="password" name="password" id="passwordInput" class="form-input" placeholder="pwd">
                 <label for="passwordInput" class="form-label">Password</label>
             </div>
-            <button type="submit" class="submit-btn" onclick="userLogin(this.form)">Login</button>
+            <button type="submit" class="submit-btn" onclick="userLogin(this.form, event)">Login</button>
         </form>
         <p class="sign-up-text"> New to the company? <a href="#">Register Here</a></p>
     </div>
