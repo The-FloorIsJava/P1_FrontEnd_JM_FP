@@ -1,4 +1,5 @@
-const url = "http://locolhost:8080/"
+const url = "http://localhost:8080/"
+let list = document.getElementById("viewAllEmployees");
 
 async function viewEmployee(){
     try{
