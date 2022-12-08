@@ -22,3 +22,9 @@ async function viewEmployee(){
             html_code += "</tr>"
             console.log(html_code)
         })
+
+        document.getElementById("viewAllEmployee").innerHTML = html_code
+    }catch(error){
+        console.error(error);
+    }
+}
