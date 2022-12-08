@@ -5,10 +5,9 @@ function userLogin(form) {
     let username = form.username.value
     let password = form.password.value
 
-    fetch (`localhost:8080/login`, {
+    fetch(`localhost:8080/login`, {
         method: 'POST',
         body: JSON.stringify({
-
             employeeUsername: username,
             password: password
         })
