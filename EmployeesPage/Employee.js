@@ -1,5 +1,5 @@
 const url = "http://localhost:8080/"
-let list = document.getElementById("viewAllEmployees");
+// let list = document.getElementById("viewAllEmployees");
 
 async function viewEmployee(){
     try{
@@ -10,14 +10,13 @@ async function viewEmployee(){
             }
         });
 
-        const customer = await responce.json();
+        const viewEmployee = await responce.json();
 
         console.log(viewEmployee);
         let html_code = "<tr>"
         viewEmployee.map(element => {
             for(const key in element){
-                html_code += "</tr>"
-                console.log(html_code)
+                html_code += `<td>${element[key]}</td>`
             }
             html_code += "</tr>"
             console.log(html_code)
